@@ -1,0 +1,8 @@
+Prog12	START 1000
+hos		LDA LOOP Comment
+		MUL =C'asmk'
+hossam  EQU 1+2
+		LDA hossam
+LOOP	WORD 100
+K100	WORD 2
+		END Prog12

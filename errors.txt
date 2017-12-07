@@ -1,0 +1,9 @@
+handle 
+	1.start and end misspelling
+	2.start and end doesn't exist
+	3.duplicate start and end 
+	4.check if there is an error we should stop writing the listing or not
+	5.repeated instruction write error in intermediate
+	6.spaces in object code 
+	7.unwanted line in test 12 in object code
+ 

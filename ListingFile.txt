@@ -1,0 +1,14 @@
+1000      Prbn01    START  1000   
+1000                LDA    =C'TEST'          00100c
+1003                LDA    BETA             000001
+1006                MUL    GAMMA            201010
+1009                STA    ALPHA            0c0001
+100C                LTORG                   
+100c      *                   C'TEST'          
+1010      GAMMA     WORD   4                000004
+1013      ALPHA     EQU    1                
+1013      BETA      EQU    ALPHA            
+1013      DELTA     EQU    BETA-ALPHA          000000
+1013      DATA      EQU    *                
+1013                LDA    =X'45'           001016
+1016                END    Prbn01 

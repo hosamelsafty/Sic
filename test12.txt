@@ -1,0 +1,21 @@
+PROG12   START   0000
+P        JSUB    COMPUTE
+FIN2     J       FIN2
+COMPUTE  LDX     ZERO
+LOOP     TD      INPUT
+         JEQ     LOOP
+	     RD      INPUT
+         COMP    FOUR
+    	 JEQ     FIN
+    	 STCH    BUFFER,X
+    	 TIX     HUND
+    	 JLT     LOOP
+FIN	     STX     LENGTH
+         RSUB 		 
+ZERO     WORD    0
+FOUR     WORD    4
+HUND     WORD    100
+INPUT    BYTE    X'F3'
+BUFFER   RESB    100
+LENGTH   RESW    1
+         END     P

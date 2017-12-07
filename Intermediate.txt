@@ -1,0 +1,27 @@
+1000      Prbn01    START  1000   
+1000                LDA    =C'TEST'
+1003                LDA    BETA   
+1006                MUL    GAMMA  
+1009                STA    ALPHA  
+100C                LTORG         
+100c      *                   C'TEST'
+1010      GAMMA     WORD   4      
+1013      ALPHA     EQU    1      
+1013      BETA      EQU    ALPHA  
+1013      DELTA     EQU    BETA-ALPHA
+1013      DATA      EQU    *      
+1013                LDA    =X'45' 
+1016                END    Prbn01 
+1016      *                   X'45'
+---------------------
+GAMMA | 1010
+DATA | 1013
+DELTA | 0
+Prbn01 | 1000
+ALPHA | 1
+BETA | 1
+---------------------
+---------------------
+X'45' | sic.Triplet@55f96302
+C'TEST' | sic.Triplet@3d4eac69
+---------------------
